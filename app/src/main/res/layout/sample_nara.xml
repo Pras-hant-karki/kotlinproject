@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/akatImage"
+        android:layout_width="169dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/akat" />
+
+    <TextView
+        android:id="@+id/akatsuki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="90dp"
+        android:text="Akatsuki"
+        app:layout_constraintStart_toEndOf="@+id/akatImage"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Bounty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="29dp"
+        android:text="Bountys"
+        app:layout_constraintStart_toEndOf="@+id/akatImage"
+        app:layout_constraintTop_toBottomOf="@+id/akatsuki" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -23,7 +23,7 @@ class interactionActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_interaction)
 
-        main=findViewById(R.id.main)
+        main=findViewById(R.id.recycleView)
         btnToast = findViewById(R.id.toast)
         btnSnack = findViewById(R.id.snackbar)
         btnAlert = findViewById(R.id.alert)
@@ -57,7 +57,7 @@ class interactionActivity : AppCompatActivity() {
             alert.create().show()
         }
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
+        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.recycleView)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
